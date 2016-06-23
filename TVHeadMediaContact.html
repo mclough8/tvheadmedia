@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: -webkit-linear-gradient (left, #111111, #222222);
+  background: -moz-linear-gradient (left, #111111, #222222);
+  background: -o-linear-gradient (left, #111111, #222222);
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 0 0 0 0;
+  border-radius: 0px;
+  /*background: -webkit-linear-gradient(left, transparent 0%,#fff 50%,transparent 100%);*/
+}
+h1 {
+  font-family: 'Raleway';
+  text-align: right;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  font-family: 'Raleway';
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p.web {
+  font-family: 'Raleway';
+  font-size: 20px;
+  color: rgba(0,0,0,1);
+  background: black;
+  background: linear-gradient(bottom, #547f00, rgba(0,0,0,.01));
+  background: -webkit-linear-gradient(bottom, #547f00, rgba(0,0,0,.001));
+  background: -moz-linear-gradient(bottom, #547f00, rgba(0,0,0,.001));
+  padding: 30px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  width: 822px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+  border: none;
+  border-radius: 0px 0px 20px 20px;
+  left: 75px;
+  top: 80px;
+}
+
+p.app {
+  font-family: 'Raleway';
+  font-size: 20px;
+  color: rgba(0,0,0,1);
+  background: black;
+  background: linear-gradient(bottom, #547f00, rgba(0,0,0,.01));
+  background: -webkit-linear-gradient(bottom, #547f00, rgba(0,0,0,.001));
+  background: -moz-linear-gradient(bottom, #547f00, rgba(0,0,0,.001));
+  padding: 30px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  width: 822px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+  border: none;
+  border-radius: 0px 0px 20px 20px;
+  left: 75px;
+  top: 210px;
+}
+
+p.vidgame {
+  font-family: 'Raleway';
+  font-size: 20px;
+  color: rgba(0,0,0,1);
+  background: black;
+  background: linear-gradient(bottom, #547f00, rgba(0,0,0,.01));
+  background: -webkit-linear-gradient(bottom, #547f00, rgba(0,0,0,.001));
+  background: -moz-linear-gradient(bottom, #547f00, rgba(0,0,0,.001));
+  padding: 20px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  width: 842px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+  border: none;
+  border-radius: 0px 0px 20px 20px;
+  left: 75px;
+  top: 345px;
+}
+
+p.whatwedotext {
+  font-family: 'Raleway';
+  font-size: 60px;
+  color: black;
+  margin-bottom: -100px;
+  border: solid;
+  background: #547f00;
+  width: 837px;
+  border-radius: 20px 0px 0px 20px;
+  background: linear-gradient(bottom, #547f00, rgba(0,0,0,.01));
+  background: -webkit-linear-gradient(bottom, #547f00, rgba(0,0,0,.001));
+  background: -moz-linear-gradient(bottom, #547f00, rgba(0,0,0,.001));
+  padding: 10px;
+
+
+}
+
+.whatwedo {
+  position: relative;
+  top: 100px;
+  left: 100px;
+
+  box-shadow: 0px 0px 8px #ffffff;
+  -webkit-box-shadow: 0px 0px 8px #ffffff;
+  -ms-box-shadow: 0px 0px 8px #ffffff;
+  -o-box-shadow: 0px 0px 8px #ffffff;
+
+}
+
+.beep1 {
+  width: 5px;
+  height: 10px;
+  border: 5px solid transparent;
+  border-top: 10px solid #777;
+  border-bottom: 80px solid #888;
+  position: relative;
+  left: 43px;
+  top: -103px;
+  -webkit-transform: rotate(270deg); /* Safari */
+  transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+}
+
+.beep2 {
+  width: 5px;
+  height: 10px;
+  border: 5px solid transparent;
+  border-top: 10px solid #777;
+  border-bottom: 80px solid #888;
+  position: relative;
+  left: 62px;
+  top: -125px;
+  -webkit-transform: rotate(225deg); /* Safari */
+  transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+}
+
+.beep3 {
+  width: 5px;
+  height: 10px;
+  border: 5px solid transparent;
+  border-top: 10px solid #777;
+  border-bottom: 80px solid #888;
+  position: relative;
+  left: 56px;
+  top: -372px;
+  -webkit-transform: rotate(305deg); /* Safari */
+  transform: rotate(305deg);
+  -moz-transform: rotate(305deg);
+}
+
+.beeper1 {
+  width: 5px;
+  height: 10px;
+  border: 5px solid transparent;
+  border-top: 10px solid #777;
+  border-bottom: 80px solid #888;
+  position: relative;
+  left: 750px;
+  top: -203px;
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+
+.beeper2 {
+  width: 5px;
+  height: 10px;
+  border: 5px solid transparent;
+  border-top: 10px solid #777;
+  border-bottom: 80px solid #888;
+  position: relative;
+  left: 750px;
+  top: -180px;
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+
+.beeper3 {
+  width: 5px;
+  height: 10px;
+  border: 5px solid transparent;
+  border-top: 10px solid #777;
+  border-bottom: 80px solid #888;
+  position: relative;
+  left: 750px;
+  top: -530px;
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+
+
+.nav {
+  height: 40px;
+  width: 700px;
+  margin: auto 0;
+  background: black;
+  position:relative;
+
+}
+
+.navli {
+  color: white;
+  font-family: 'Raleway';
+  display: inline;
+  padding-right: 70px;
+  position: relative;
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+.navigation {
+  list-style-type: none;
+  display: inline;
+  width: 300px;
+  padding: 0px;
+  left: 150px;
+  position: relative;
+  padding-top: 20px;
+
+
+}
+
+.tvheadmedia {
+  background-image: url("TVHeadLogo.png");
+
+  /*background: -webkit-linear-gradient (left, #7b7f72, black);
+  background: -moz-linear-gradient (left, #7b7f72, black);
+  background: -o-linear-gradient (left, #7b7f72, black);*/
+
+
+  padding-bottom: 900px;
+  left: -100px;
+
+  position: relative;
+
+  width: 25%;
+  height: 25%;
+  padding-right: 500px;
+}
+
+.tvheadmediatext {
+  bottom: -900px;
+  right: -700px;
+  width: 600px;
+
+
+}
+
+.tvtext {
+  color: #547f00;
+}
+
+.amazing {
+  position: relative;
+  left: 100px;
+}
+
+.test {
+  /*color: rgba(255,255,255,1);
+  background: rgba(0,0,0,1);*/
+  width: 1300px;
+  height: 1100px;
+  background:-webkit-linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,.4));
+  left: -340px;
+  margin-top: -150px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.homebutton {
+  text-decoration: none;
+  color: #547f00;
+}
+
+.bullets {
+  position: relative;
+  top: -200px;
+  left: -250px;
+}
+
+ul {
+  text-decoration: none;
+
+
+}
+
+.bulletul {
+  position: relative;
+  padding: 100px;
+  list-style-type: square;
+  /*list-style-image: url("/week6/green_bullet.gif");*/
+}
+
+.bulletli {
+  position: relative;
+  padding: 40px;
+  font-size: 45px;
+  font-family: 'Raleway';
+  color: green;
+
+}
+
+.contact {
+  position: relative;
+  margin-top: 100px;
+}
+
+.input {
+  margin: 25px;
+
+}
+
+form {
+  font-family: 'Raleway';
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="test">
+<div class="tvheadmedia">
+  <div class="tvheadmediatext">
+    <h1 class="tvtext"><a class="homebutton" href="TVHeadMediaHome.html">TV Head Media</a></h1>
+    <h2 class="amazing">The start of something amazing</h2>
+    <div class="nav">
+
+      <ul class="navigation">
+        <li class="navli"><a href="TVHeadMediaHome.html">Home</a></li>
+        <li class="navli"><a href="">Project Gallery</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<div class="contact">
+<h2>Send e-mail to tvheadmedia@gmail.com:</h2>
+
+<form action="MAILTO:tvheadmedia@gmail.com" method="post" enctype="text/plain">
+Name:<br>
+<input class="input" type="text" name="name" placeholder="Name"><br>
+E-mail:<br>
+<input class="input" type="text" name="mail" placeholder="Email"><br>
+Comment:<br>
+<input class="input" type="text" name="comment" placeholder="Comment" size="50"><br><br>
+<input class="input" type="submit" value="Send">
+<input class="input" type="reset" value="Reset">
+</form>
+
+</div>
+
+</body>
